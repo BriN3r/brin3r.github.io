@@ -1,0 +1,23 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    line-height: 1.5;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    text-align: center;
+    padding-left: 0;
+    list-style-position: inside;
+}
