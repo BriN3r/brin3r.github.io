@@ -10,8 +10,26 @@
         <title>My Website</title>
     </head>
     <body>
+        <div id="welcome"></div>
+         <script>
+        const hours = new Date().getHours();
+
+        const isMorning = hours >= 4 && hours < 12;
+        const isAfternoon = hours >= 12 && hours < 17;
+        const isEvening = hours >= 17 || hours < 4;
+
+        const welcomeElement = document.getElementById('welcome');
+
+        if (isMorning) {
+          welcomeElement.textContent = "Good morning!";
+        } else if (isAfternoon) {
+          welcomeElement.textContent = "Good afternoon!";
+        } else if (isEvening) {
+          welcomeElement.textContent = "Good evening!";
+        }
+    </script>
         <p>Hi, my name is Brianna</p>
-        <p><img src="/img_03990.jpg" alt="My Photo" width="500" height="485"></p>
+        <p><img src="img_03990.jpg" alt="My Photo" width="500" height="485"></p>
         <p>I'm currently in the Web Design program. Recently got married in June and expecting a baby boy in November. I don't really have any hobbies anymore. I am pretty busy with work, school, and getting the house set up for the baby. The most I do now is hang out with my husband and dog, sometimes our friends for birthday parties or certain events. Here is a list of things I used to like to do on my free time.</p>
         <p><ul>
             <li>Painting</li>
